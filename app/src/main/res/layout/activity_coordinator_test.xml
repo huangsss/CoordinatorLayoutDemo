@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/convenientbanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:canLoop="true"
+            app:layout_scrollFlags="scroll">
+
+        </com.bigkoo.convenientbanner.ConvenientBanner>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_label1"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:background="#CCCC33"
+                    android:gravity="center"
+                    android:text="小说精选"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/item_label2"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:background="#FFCC00"
+                    android:gravity="center"
+                    android:text="摄影游记"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/item_label3"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:background="#FF0033"
+                    android:gravity="center"
+                    android:text="漫画手绘"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/item_label4"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="签约作者"
+                    android:gravity="center"
+                    android:background="#006699"
+                    />
+                <TextView
+                    android:id="@+id/item_label5"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="巴拉巴拉"
+                    android:gravity="center"
+                    android:background="#FF6600"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="搜索内容"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            app:layout_scrollFlags="scroll|enterAlways"
+
+            android:focusable="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray"
+            android:layout_marginBottom="10dp"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/large_text" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
