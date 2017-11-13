@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
         super.onCreate(savedInstanceState);
         //activity_coordinator_test -- CoordinatorLayout练习;
         //activity_main -- CoordinatorLayout - Appbar - CollapsingToolbarLayout - Toolbar - FloatingActionButton联动;
-        // -----具体效果运行一下就明白了-------
+        // -----具体效果运行一下就明白了-------测试
         setContentView(R.layout.activity_main);
 
     }
